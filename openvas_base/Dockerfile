@@ -36,6 +36,8 @@ RUN apt-get install build-essential \
                     texlive-latex-recommended \
                     texlive-latex-extra \
                     nmap -y --no-install-recommends && \
+    apt-get install libhiredis-dev \
+                    libssh-dev -y && \
     mkdir /openvas-src && \
     cd /openvas-src && \
         wget http://wald.intevation.org/frs/download.php/1866/openvas-libraries-8.0+beta5.tar.gz && \
