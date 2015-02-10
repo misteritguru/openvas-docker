@@ -38,42 +38,42 @@ RUN apt-get install build-essential \
                     nmap -y --no-install-recommends && \
     mkdir /openvas-src && \
     cd /openvas-src && \
-        wget http://wald.intevation.org/frs/download.php/1907/openvas-libraries-7.0.7.tar.gz && \
-        wget http://wald.intevation.org/frs/download.php/1844/openvas-scanner-4.0.5.tar.gz && \
-        wget http://wald.intevation.org/frs/download.php/1911/openvas-manager-5.0.8.tar.gz && \
-        wget http://wald.intevation.org/frs/download.php/1915/greenbone-security-assistant-5.0.5.tar.gz && \
-        wget http://wald.intevation.org/frs/download.php/1803/openvas-cli-1.3.1.tar.gz && \
+        wget http://wald.intevation.org/frs/download.php/1866/openvas-libraries-8.0+beta5.tar.gz && \
+        wget http://wald.intevation.org/frs/download.php/1870/openvas-scanner-5.0+beta5.tar.gz && \
+        wget http://wald.intevation.org/frs/download.php/1874/openvas-manager-6.0+beta5.tar.gz && \
+        wget http://wald.intevation.org/frs/download.php/1878/greenbone-security-assistant-6.0+beta5.tar.gz && \
+        wget http://wald.intevation.org/frs/download.php/1882/openvas-cli-1.4+beta5.tar.gz && \
     cd /openvas-src/ && \
-        tar zxvf openvas-libraries-7.0.7.tar.gz && \
-        tar zxvf openvas-scanner-4.0.5.tar.gz && \
-        tar zxvf openvas-manager-5.0.8.tar.gz && \
-        tar zxvf greenbone-security-assistant-5.0.5.tar.gz && \
-        tar zxvf openvas-cli-1.3.1.tar.gz && \
-    cd /openvas-src/openvas-libraries-7.0.7 && \
+        tar zxvf openvas-libraries-8.0+beta5.tar.gz && \
+        tar zxvf openvas-scanner-5.0+beta5.tar.gz && \
+        tar zxvf openvas-manager-6.0+beta5.tar.gz && \
+        tar zxvf greenbone-security-assistant-6.0+beta5.tar.gz && \
+        tar zxvf openvas-cli-1.4+beta5.tar.gz && \
+    cd /openvas-src/openvas-libraries-8.0+beta5 && \
         mkdir source && \
         cd source && \
         cmake .. && \
         make && \
         make install && \
-    cd /openvas-src/openvas-scanner-4.0.5 && \
+    cd /openvas-src/openvas-scanner-5.0+beta5 && \
         mkdir source && \
         cd source && \
         cmake .. && \
         make && \
         make install && \
-    cd /openvas-src/openvas-manager-5.0.8 && \
+    cd /openvas-src/openvas-manager-6.0+beta5 && \
         mkdir source && \
         cd source && \
         cmake .. && \
         make && \
         make install && \
-    cd /openvas-src/greenbone-security-assistant-5.0.5 && \
+    cd /openvas-src/greenbone-security-assistant-6.0+beta5 && \
         mkdir source && \
         cd source && \
         cmake .. && \
         make && \
         make install && \
-    cd /openvas-src/openvas-cli-1.3.1 && \
+    cd /openvas-src/openvas-cli-1.4+beta5 && \
         mkdir source && \
         cd source && \
         cmake .. && \
